@@ -53,8 +53,10 @@ def print_answer(question):
     result = chain({"input_documents": docs}, return_only_outputs=False)
     return result["output_text"]
 
+def approve(type, request):
+    return "Error approving."
 
-def run(msg):
+def run(msg, history):
     answer = print_answer(msg)
     return answer
 
