@@ -56,8 +56,8 @@ def print_answer(question):
 def approve(type, request):
     return "Error approving."
 
-def run(msg, history):
-    answer = print_answer(msg)
+def run(message, history):
+    answer = print_answer(message)
     return answer
 
 
